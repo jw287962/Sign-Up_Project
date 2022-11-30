@@ -42,6 +42,6 @@ form.addEventListener('change' ,e =>{
 
 form.addEventListener('submit',e =>{
     e.preventDefault();
-console.log(e);
-e.run();
+
+e.run(); 
 });
