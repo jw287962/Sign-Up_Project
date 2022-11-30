@@ -7,14 +7,13 @@ input{
 }
 :root {
     --left-width: 450px;
-    --form-height: clamp(250px,33vh,33vh)
+    --form-height: clamp(250px,33vh,33vh);
   }
 
 
 body{
     margin: 0px;
     padding: 0px;
-   min-width: 800px;
 }
 header{
     margin: 0px;
@@ -71,26 +70,26 @@ header{
     font-size: 5.5rem;
     
 }
-div.credits{
+.credits{
     position: absolute;
     top: 95%;
    
    
     text-align: center;
 }
-div.credits a, div.credits{
+.credits a, .credits{
     color: white;
     margin: 0px 4px;
     font-size: small;
 }
-div.credits a{
+.credits a{
     text-decoration: underline;
 }
 .leftside{
     justify-content: center;
     position: relative;
     display: flex;
-    height: clamp(800px,100vh,100vh);
+    height: clamp(760px,100vh,100vh);
     width: var(--left-width);
 
     background-image: url('../assets/photo-1585202900225-6d3ac20a6962.avif');
@@ -102,7 +101,7 @@ div.credits a{
  
     flex-direction: row;
     height: 100vh;
-   flex-wrap: wrap;
+   
 }
 p.toptext{
     padding: 100px 175px 0px 30px;
@@ -122,6 +121,8 @@ p{
     font-weight: bolder;
     font-size: 1.3rem;
 }
+
+
 .aboveform{
     position: relative;
     height: var(--form-height);
@@ -131,15 +132,17 @@ p{
     flex-direction: column;
     margin-bottom: 5px;
     border: 1px solid white;
-    height: 28vh;
-    min-height: 250px;
+    height: var(--form-height);
+    min-height: 270px;
     box-shadow: 0 5px 6px -5px #777;
-    padding: 20px 20px 10px 50px;
-
     font-weight: bold;
     font-size: large;
+   
 }
-
+form{
+    padding: 20px 20px 20px 50px;
+  
+}
 .formrow{
         display: flex;
         position: relative;
@@ -159,7 +162,7 @@ label{
 
 .belowform{
     position: relative;
-  
+    
 }
 button{
     border: none;
@@ -236,6 +239,11 @@ span.password::before{
         opacity: 0;
     }
 }
+.belowform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 input:focus + span::after{
     position: absolute;
    
@@ -245,4 +253,24 @@ input:focus + span::after{
     bottom: 5px;
     right: 30px;
     animation: silo-help 10s;
+}
+
+
+ .footer{
+    
+    background-color: rgb(63, 63, 63);   
+    border-radius: 3px;
+    padding: 5px;
+    height: auto;
+   
+}
+footer{
+   
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+.footer a{
+    color: white;
+    padding: 5px;
 }
