@@ -109,6 +109,7 @@ p.toptext{
     margin: 0px;
 }
 p{
+    position: relative;
     padding: 20px 30px 0px 30px;
     margin: 0px;
 }
@@ -153,15 +154,7 @@ label{
     color: rgb(27, 27, 27);
     font-size: 14px;
 }
-input{
-    padding-left: 5px;
-    padding-right: 5px;
-    appearance: none;
-    width: 250px;
-    height: 25px;
-    background-color: rgb(255, 245, 245);
-    border: 1px solid rgb(218, 218, 218);
-}
+
 .belowform{
     position: relative;
   
@@ -189,3 +182,47 @@ a{
 p.login{
     font-size: medium;
 }
+input{
+    padding-left: 5px;
+    padding-right: 5px;
+    appearance: none;
+    width: 250px;
+    height: 28px;
+    background-color: rgb(255, 245, 245);
+    border: 1px solid rgb(218, 218, 218);
+}
+input{
+    border-radius: 5px;
+}
+
+input:focus{
+    background-color: white;
+    outline: blue solid 1px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: none;
+}
+
+
+input:empty, input.empty{
+    background-color: rgb(255, 245, 245);
+    border-color:  rgb(218, 218, 218);
+}
+
+input[type="password"]{
+    border-color:  red;
+    color: red;
+    position: inherit;
+}
+
+span::before{
+    content:"* Passwords must match";
+    color: red;
+    font-size: small;
+    position: absolute;
+    width: fit-content;
+    bottom: -15px;
+    left: 0px;
+}
+
+
+
