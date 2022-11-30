@@ -2,8 +2,12 @@
     font-family: "Norse-Bold";
     src: url("../fonts/Norse-Bold.otf");
 }
+input{
+    border: 0px;
+}
 :root {
-    --left-width: 400px;
+    --left-width: 450px;
+    --form-height: clamp(220px,33vh,33vh)
   }
 
 
@@ -41,7 +45,7 @@ header{
     background-color: rgb(0, 0, 0,0.4);
     width: var(--left-width);
     height: 8rem;
-    top: 5rem;
+    top: 6rem;
    
 
 }
@@ -70,7 +74,7 @@ header{
 .leftside{
     position: relative;
     display: flex;
-    height: 100vh;
+    height: clamp(680px,100vh,100vh);
     width: var(--left-width);
 
     background-image: url('../assets/photo-1585202900225-6d3ac20a6962.avif');
@@ -78,8 +82,80 @@ header{
     background-position-x: 30%; 
 }
 .rightside{
-   
+   padding: 0px;
+ 
     flex-direction: row;
-   
+    height: 100vh;
    flex-wrap: wrap;
+}
+p.toptext{
+    padding: 100px 30px 0px 30px;
+    margin: 0px;
+}
+p{
+    padding: 20px 30px 0px 30px;
+    margin: 0px;
+}
+
+.aboveform,.belowform{
+
+    background-color: rgb(247, 247, 247);
+    height: var(--form-height);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.aboveform{
+    position: relative;
+    height: var(--form-height);
+}
+.middleform{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    height: 28vh;
+    box-shadow: 0 5px 6px -5px #777;
+    padding: 20px 20px 10px 50px;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+.formrow{
+        display: flex;
+        position: relative;
+}
+
+
+label{
+    display: block;
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+}
+input{
+    padding-left: 5px;
+    padding-right: 5px;
+    appearance: none;
+    width: 250px;
+    height: 25px;
+    background-color: rgb(255, 245, 245);
+    border: 1px solid rgb(218, 218, 218);
+}
+.belowform{
+    position: relative;
+  
+}
+
+button[type="submit"]{
+    background-color: #596D48;
+    display: block;
+    padding: 10px 40px;
+    height: fit-content;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0px 50px 0px 0px;
+    
+    border-radius: 7px;
 }
