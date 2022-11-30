@@ -7,3 +7,8 @@ Just practicing some javascript and html and css via TheOdinProject
 Making a sign up page
 
 https://jw287962.github.io/Sign-Up_Project/html/signup.html
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> de83d4b (bug fixes)
