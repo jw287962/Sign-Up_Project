@@ -1,8 +1,16 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("../fonts/Norse-Bold.otf");
+}
+:root {
+    --left-width: 400px;
+  }
 
 
 body{
     margin: 0px;
     padding: 0px;
+   min-width: 800px;
 }
 header{
     margin: 0px;
@@ -17,4 +25,61 @@ header{
     color: black;
     text-decoration: underline;
     padding-right: 1rem;
+}
+
+.flexcontainer{
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    color: white;
+  
+    background-color: rgb(0, 0, 0,0.4);
+    width: var(--left-width);
+    height: 8rem;
+    top: 5rem;
+   
+
+}
+.logopicture{
+    /* background-image: url('../assets/odin-lined.png');
+    background-repeat: no-repeat; */
+
+   
+    color: white;
+     position: absolute;
+     top: 1rem;
+     left: 5rem;
+  
+     
+}
+.logotext{
+    position: absolute;
+    top: 1.5rem;
+    left: 11rem;
+    color: white;
+    font-family: 'Norse-Bold','Times New Roman', Times, serif;
+   
+    font-size: 5.5rem;
+    
+}
+.leftside{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: var(--left-width);
+
+    background-image: url('../assets/photo-1585202900225-6d3ac20a6962.avif');
+    background-repeat: no-repeat;
+    background-position-x: 30%; 
+}
+.rightside{
+   
+    flex-direction: row;
+   
+   flex-wrap: wrap;
 }
