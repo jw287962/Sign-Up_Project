@@ -236,7 +236,7 @@ span.password::before{
         opacity: 0;
     }
 }
-input:focus + span::before{
+input:focus + span::after{
     position: absolute;
    
     content: " \'" attr(data-help) "\'";
