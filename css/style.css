@@ -7,7 +7,7 @@ input{
 }
 :root {
     --left-width: 450px;
-    --form-height: clamp(220px,33vh,33vh)
+    --form-height: clamp(250px,33vh,33vh)
   }
 
 
@@ -74,7 +74,7 @@ header{
 .leftside{
     position: relative;
     display: flex;
-    height: clamp(680px,100vh,100vh);
+    height: clamp(788px,100vh,100vh);
     width: var(--left-width);
 
     background-image: url('../assets/photo-1585202900225-6d3ac20a6962.avif');
@@ -115,6 +115,7 @@ p{
     margin-bottom: 5px;
     border: 1px solid white;
     height: 28vh;
+    min-height: 250px;
     box-shadow: 0 5px 6px -5px #777;
     padding: 20px 20px 10px 50px;
 
